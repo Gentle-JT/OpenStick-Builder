@@ -62,7 +62,7 @@ mkdir -p ${CHROOT}/boot/extlinux
 cp configs/extlinux.conf ${CHROOT}/boot/extlinux
 
 # copy custom dtb's
-cp dtbs/* ${CHROOT}/boot/dtbs/qcom
+cp dtbs/msm8916-thwc-ufi001c.dtb ${CHROOT}/boot
 
 # create missing directory
 mkdir -p ${CHROOT}/lib/firmware/msm-firmware-loader
